@@ -1,0 +1,29 @@
+#Generating source browse information for project internal eeprom
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build functions.pbi : index functions.xcl
+build internal$ eeprom.pbi : index internal$ eeprom.xcl
+build uartstdio.pbi : index uartstdio.xcl
+build internal$ eeprom.pbd : link functions.pbi internal$ eeprom.pbi uartstdio.pbi
+build internal$ eeprom.pbw : browsedata internal$ eeprom.pbd
+
+

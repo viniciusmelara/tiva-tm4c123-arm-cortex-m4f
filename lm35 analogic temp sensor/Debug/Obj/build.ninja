@@ -1,0 +1,29 @@
+#Generating source browse information for project lm35 adc0
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.4\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build functions.pbi : index functions.xcl
+build lm35$ adc0.pbi : index lm35$ adc0.xcl
+build uartstdio.pbi : index uartstdio.xcl
+build lm35$ adc0.pbd : link functions.pbi lm35$ adc0.pbi uartstdio.pbi
+build lm35$ adc0.pbw : browsedata lm35$ adc0.pbd
+
+

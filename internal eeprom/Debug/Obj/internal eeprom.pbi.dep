@@ -1,0 +1,18 @@
+internal\ eeprom.pbi: \
+  E:\ArquivosProjetos\ARM\Projetos\ de\ Aulas\ e\ Outros\PROJETOS\ PRO\ GITHUB\internal\ eeprom\internal\ eeprom.c \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdint.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Config_Normal.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdbool.h \
+  E:\ArquivosProjetos\ARM\Projetos\ de\ Aulas\ e\ Outros\bibliotecas\inc/hw_gpio.h \
+  E:\ArquivosProjetos\ARM\Projetos\ de\ Aulas\ e\ Outros\bibliotecas\inc/hw_memmap.h \
+  E:\ArquivosProjetos\ARM\Projetos\ de\ Aulas\ e\ Outros\bibliotecas\driverlib/sysctl.h \
+  E:\ArquivosProjetos\ARM\Projetos\ de\ Aulas\ e\ Outros\bibliotecas\driverlib/gpio.h \
+  E:\ArquivosProjetos\ARM\Projetos\ de\ Aulas\ e\ Outros\bibliotecas\driverlib/uart.h \
+  E:\ArquivosProjetos\ARM\Projetos\ de\ Aulas\ e\ Outros\bibliotecas\utils/uartstdio.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\stdarg.h \
+  E:\ArquivosProjetos\ARM\Projetos\ de\ Aulas\ e\ Outros\bibliotecas\driverlib/eeprom.h \
+  E:\ArquivosProjetos\ARM\Projetos\ de\ Aulas\ e\ Outros\PROJETOS\ PRO\ GITHUB\internal\ eeprom/functions.h
